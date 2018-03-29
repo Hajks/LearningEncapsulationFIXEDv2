@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningEncapsulationFIXEDv2", "LearningEncapsulationFIXEDv2\LearningEncapsulationFIXEDv2.csproj", "{08A698CC-F488-43EC-9A35-A1487BCF3D60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningInheritance", "LearningEncapsulationFIXEDv2\LearningInheritance.csproj", "{08A698CC-F488-43EC-9A35-A1487BCF3D60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

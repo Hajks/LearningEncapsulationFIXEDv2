@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LearningEncapsulationFIXEDv2
+namespace LearningInheritance
 {
     //now program looks way better then previous one. Now i am satisfied!
     public partial class Form1 : Form
@@ -43,6 +43,21 @@ namespace LearningEncapsulationFIXEDv2
         {
             dinnerParty.FancyDecorations = fancyBox.Checked;
             DisplayDinnerPartyCost();
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
