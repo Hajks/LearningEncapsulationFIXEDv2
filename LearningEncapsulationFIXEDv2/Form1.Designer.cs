@@ -38,16 +38,18 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericBirthday = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.fancyBirthday = new System.Windows.Forms.CheckBox();
+            this.birthdayCostLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.tooLongLabel = new System.Windows.Forms.Label();
+            this.cakeWritting = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericBirthday)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -129,7 +131,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(359, 313);
+            this.tabControl1.Size = new System.Drawing.Size(287, 206);
             this.tabControl1.TabIndex = 8;
             // 
             // tabPage1
@@ -150,16 +152,18 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.numericUpDown2);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.checkBox1);
+            this.tabPage2.Controls.Add(this.cakeWritting);
+            this.tabPage2.Controls.Add(this.tooLongLabel);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.checkBox2);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.numericBirthday);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.fancyBirthday);
+            this.tabPage2.Controls.Add(this.birthdayCostLabel);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(351, 287);
+            this.tabPage2.Size = new System.Drawing.Size(279, 180);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Przyjęcie urodzinowe";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -173,74 +177,91 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Koszt całkowity";
             // 
-            // numericUpDown2
+            // numericBirthday
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(111, 19);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.numericBirthday.Location = new System.Drawing.Point(111, 19);
+            this.numericBirthday.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.numericBirthday.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown2.TabIndex = 13;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.numericBirthday.Name = "numericBirthday";
+            this.numericBirthday.Size = new System.Drawing.Size(120, 20);
+            this.numericBirthday.TabIndex = 13;
+            this.numericBirthday.Value = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
+            this.numericBirthday.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 21);
+            this.label4.Location = new System.Drawing.Point(30, 23);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Liczba osób";
             // 
-            // checkBox1
+            // fancyBirthday
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(111, 79);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(127, 17);
-            this.checkBox1.TabIndex = 12;
-            this.checkBox1.Text = "Fantazyjne dekoracje";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.fancyBirthday.AutoSize = true;
+            this.fancyBirthday.Location = new System.Drawing.Point(104, 45);
+            this.fancyBirthday.Name = "fancyBirthday";
+            this.fancyBirthday.Size = new System.Drawing.Size(127, 17);
+            this.fancyBirthday.TabIndex = 12;
+            this.fancyBirthday.Text = "Fantazyjne dekoracje";
+            this.fancyBirthday.UseVisualStyleBackColor = true;
+            this.fancyBirthday.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // birthdayCostLabel
+            // 
+            this.birthdayCostLabel.AutoSize = true;
+            this.birthdayCostLabel.Location = new System.Drawing.Point(123, 109);
+            this.birthdayCostLabel.Name = "birthdayCostLabel";
+            this.birthdayCostLabel.Size = new System.Drawing.Size(20, 13);
+            this.birthdayCostLabel.TabIndex = 10;
+            this.birthdayCostLabel.Text = "xD";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(123, 109);
+            this.label5.Location = new System.Drawing.Point(16, 65);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "label3";
+            this.label5.Size = new System.Drawing.Size(78, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Napis na torcie";
             // 
-            // checkBox2
+            // tooLongLabel
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(111, 55);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(91, 17);
-            this.checkBox2.TabIndex = 11;
-            this.checkBox2.Text = "Opcja zdrowa";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.tooLongLabel.AutoSize = true;
+            this.tooLongLabel.BackColor = System.Drawing.Color.Red;
+            this.tooLongLabel.Location = new System.Drawing.Point(201, 84);
+            this.tooLongLabel.Name = "tooLongLabel";
+            this.tooLongLabel.Size = new System.Drawing.Size(72, 13);
+            this.tooLongLabel.TabIndex = 15;
+            this.tooLongLabel.Text = "ZBYT DŁUGI";
+            // 
+            // cakeWritting
+            // 
+            this.cakeWritting.Location = new System.Drawing.Point(15, 81);
+            this.cakeWritting.Name = "cakeWritting";
+            this.cakeWritting.Size = new System.Drawing.Size(185, 20);
+            this.cakeWritting.TabIndex = 16;
+            this.cakeWritting.Text = "Sto lat!";
+            this.cakeWritting.TextChanged += new System.EventHandler(this.cakeWritting_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 323);
+            this.ClientSize = new System.Drawing.Size(299, 217);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -250,7 +271,7 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericBirthday)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -267,11 +288,13 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericBirthday;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox fancyBirthday;
+        private System.Windows.Forms.Label birthdayCostLabel;
+        private System.Windows.Forms.TextBox cakeWritting;
+        private System.Windows.Forms.Label tooLongLabel;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
 
